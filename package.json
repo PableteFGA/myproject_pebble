@@ -1,0 +1,54 @@
+{
+  "name": "myproject_pebble",
+  "author": "MakeAwesomeHappen",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "myproject_pebble",
+    "uuid": "bfcb8d92-8577-49a4-8616-6ceccbf6cf90",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": {
+        "KEY_REQUEST_REFRESH": 1,
+        "KEY_ITEM_INDEX": 2,
+        "KEY_ITEM_TEXT": 3,
+        "KEY_ITEM_COUNT": 4,
+        "KEY_HEADER_TEXT": 5,
+        "KEY_ITEM_CODE": 6,
+        "KEY_ITEM_LABEL": 7,
+        "KEY_ITEM_RATE_X100": 8,
+        "KEY_ITEM_SUPPORTED": 9
+},
+    "resources": {
+      "media": [{
+  "type": "bitmap",
+  "name": "IMAGE_CONVERTER_UP",
+  "file": "images/converter_up.png"
+},
+{
+  "type": "bitmap",
+  "name": "IMAGE_CONVERTER_SELECT",
+  "file": "images/converter_select.png"
+},
+{
+  "type": "bitmap",
+  "name": "IMAGE_CONVERTER_DOWN",
+  "file": "images/converter_down.png"
+}]
+    }
+  }
+}
