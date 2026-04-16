@@ -405,11 +405,15 @@ Discarded input sections
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_layer_legacy2_create
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.menu_layer_destroy
+                0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_layer_get_scroll_layer
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_layer_get_selected_index
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_layer_legacy2_set_callbacks__deprecated
+                0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.menu_layer_set_click_config_onto_window
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_layer_set_selected_index
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
@@ -536,7 +540,6 @@ Discarded input sections
  .text.srand    0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.strcat   0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.strcmp   0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
- .text.strcpy   0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.strftime
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.strncat  0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
@@ -612,6 +615,12 @@ Discarded input sections
  .text.app_message_inbox_size_maximum
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_message_outbox_size_maximum
+                0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.app_message_register_inbox_dropped
+                0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.app_message_register_outbox_failed
+                0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.app_message_register_outbox_sent
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_message_set_context
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
@@ -991,6 +1000,10 @@ Discarded input sections
  .text.gpath_draw_outline_open
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.time     0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.menu_layer_set_highlight_colors
+                0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.menu_layer_set_normal_colors
+                0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_layer_pad_bottom_enable
                 0x00000000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.status_bar_layer_create
@@ -1416,7 +1429,7 @@ LOAD /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc
  .note.gnu.build-id
                 0x00000084       0x24 linker stubs
 
-.text           0x000000a8     0x19d1
+.text           0x000000a8     0x16e9
  *(.text)
  .text          0x000000a8       0x14 /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text          0x000000bc       0xa0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_ldivmod.o)
@@ -1473,371 +1486,336 @@ LOAD /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc
                 0x000008a4        0xc src/c/myproject_pebble.c.57.o
  .text.menu_get_cell_height_callback
                 0x000008b0        0x4 src/c/myproject_pebble.c.57.o
- .text.outbox_sent_handler
-                0x000008b4       0x18 src/c/myproject_pebble.c.57.o
- .text.outbox_failed_handler
-                0x000008cc       0x24 src/c/myproject_pebble.c.57.o
- .text.inbox_dropped_handler
-                0x000008f0       0x24 src/c/myproject_pebble.c.57.o
  .text.inbox_received_handler
-                0x00000914      0x22c src/c/myproject_pebble.c.57.o
- .text.window_unload
-                0x00000b40       0x2c src/c/myproject_pebble.c.57.o
+                0x000008b4      0x174 src/c/myproject_pebble.c.57.o
  .text.menu_select_callback
-                0x00000b6c       0x34 src/c/myproject_pebble.c.57.o
+                0x00000a28       0x34 src/c/myproject_pebble.c.57.o
  .text.menu_draw_row_callback
-                0x00000ba0      0x118 src/c/myproject_pebble.c.57.o
+                0x00000a5c      0x118 src/c/myproject_pebble.c.57.o
  .text.window_load
-                0x00000cb8      0x178 src/c/myproject_pebble.c.57.o
+                0x00000b74      0x154 src/c/myproject_pebble.c.57.o
  .text.startup.main
-                0x00000e30       0xf8 src/c/myproject_pebble.c.57.o
-                0x00000e30                main
+                0x00000cc8       0x70 src/c/myproject_pebble.c.57.o
+                0x00000cc8                main
  .text.app_event_loop
-                0x00000f28        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000f28                app_event_loop
- .text.app_log  0x00000f34        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000f34                app_log
+                0x00000d38        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000d38                app_event_loop
+ .text.app_log  0x00000d44        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000d44                app_log
  .text.app_message_open
-                0x00000f40        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000f40                app_message_open
+                0x00000d50        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000d50                app_message_open
  .text.dict_find
-                0x00000f4c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000f4c                dict_find
+                0x00000d5c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000d5c                dict_find
  .text.dict_write_uint8
-                0x00000f58        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000f58                dict_write_uint8
+                0x00000d68        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000d68                dict_write_uint8
  .text.fonts_get_system_font
-                0x00000f64        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000f64                fonts_get_system_font
- .text.free     0x00000f70        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000f70                free
+                0x00000d74        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000d74                fonts_get_system_font
+ .text.free     0x00000d80        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000d80                free
  .text.gbitmap_create_with_resource
-                0x00000f7c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000f7c                gbitmap_create_with_resource
+                0x00000d8c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000d8c                gbitmap_create_with_resource
  .text.gbitmap_destroy
-                0x00000f88        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000f88                gbitmap_destroy
+                0x00000d98        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000d98                gbitmap_destroy
  .text.graphics_draw_rect
-                0x00000f94        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000f94                graphics_draw_rect
+                0x00000da4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000da4                graphics_draw_rect
  .text.graphics_fill_rect
-                0x00000fa0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000fa0                graphics_fill_rect
+                0x00000db0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000db0                graphics_fill_rect
  .text.layer_add_child
-                0x00000fac        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000fac                layer_add_child
+                0x00000dbc        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000dbc                layer_add_child
  .text.layer_create_with_data
-                0x00000fb8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000fb8                layer_create_with_data
+                0x00000dc8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000dc8                layer_create_with_data
  .text.layer_destroy
-                0x00000fc4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000fc4                layer_destroy
+                0x00000dd4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000dd4                layer_destroy
  .text.layer_get_bounds
-                0x00000fd0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000fd0                layer_get_bounds
+                0x00000de0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000de0                layer_get_bounds
  .text.layer_get_data
-                0x00000fdc        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000fdc                layer_get_data
+                0x00000dec        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000dec                layer_get_data
  .text.layer_mark_dirty
-                0x00000fe8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000fe8                layer_mark_dirty
+                0x00000df8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000df8                layer_mark_dirty
  .text.layer_set_update_proc
-                0x00000ff4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000ff4                layer_set_update_proc
- .text.malloc   0x00001000        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001000                malloc
- .text.memset   0x0000100c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000100c                memset
- .text.menu_layer_destroy
-                0x00001018        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001018                menu_layer_destroy
+                0x00000e04        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e04                layer_set_update_proc
+ .text.malloc   0x00000e10        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e10                malloc
+ .text.memset   0x00000e1c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e1c                memset
  .text.menu_layer_get_layer
-                0x00001024        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001024                menu_layer_get_layer
+                0x00000e28        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e28                menu_layer_get_layer
  .text.menu_layer_reload_data
-                0x00001030        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001030                menu_layer_reload_data
- .text.menu_layer_set_click_config_onto_window
-                0x0000103c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000103c                menu_layer_set_click_config_onto_window
+                0x00000e34        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e34                menu_layer_reload_data
  .text.snprintf
-                0x00001048        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001048                snprintf
- .text.strlen   0x00001054        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001054                strlen
- .text.strncpy  0x00001060        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001060                strncpy
+                0x00000e40        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e40                snprintf
+ .text.strcpy   0x00000e4c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e4c                strcpy
+ .text.strlen   0x00000e58        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e58                strlen
+ .text.strncpy  0x00000e64        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e64                strncpy
  .text.vibes_short_pulse
-                0x0000106c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000106c                vibes_short_pulse
+                0x00000e70        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e70                vibes_short_pulse
  .text.window_create
-                0x00001078        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001078                window_create
+                0x00000e7c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e7c                window_create
  .text.window_destroy
-                0x00001084        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001084                window_destroy
+                0x00000e88        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e88                window_destroy
  .text.window_get_root_layer
-                0x00001090        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001090                window_get_root_layer
+                0x00000e94        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000e94                window_get_root_layer
  .text.window_set_click_config_provider
-                0x0000109c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000109c                window_set_click_config_provider
+                0x00000ea0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000ea0                window_set_click_config_provider
  .text.window_set_window_handlers
-                0x000010a8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000010a8                window_set_window_handlers
+                0x00000eac        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000eac                window_set_window_handlers
  .text.window_stack_push
-                0x000010b4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000010b4                window_stack_push
+                0x00000eb8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000eb8                window_stack_push
  .text.window_stack_remove
-                0x000010c0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000010c0                window_stack_remove
+                0x00000ec4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000ec4                window_stack_remove
  .text.window_get_user_data
-                0x000010cc        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000010cc                window_get_user_data
+                0x00000ed0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000ed0                window_get_user_data
  .text.window_set_user_data
-                0x000010d8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000010d8                window_set_user_data
+                0x00000edc        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000edc                window_set_user_data
  .text.app_message_outbox_begin
-                0x000010e4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000010e4                app_message_outbox_begin
+                0x00000ee8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000ee8                app_message_outbox_begin
  .text.app_message_outbox_send
-                0x000010f0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000010f0                app_message_outbox_send
- .text.app_message_register_inbox_dropped
-                0x000010fc        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000010fc                app_message_register_inbox_dropped
+                0x00000ef4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000ef4                app_message_outbox_send
  .text.app_message_register_inbox_received
-                0x00001108        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001108                app_message_register_inbox_received
- .text.app_message_register_outbox_failed
-                0x00001114        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001114                app_message_register_outbox_failed
- .text.app_message_register_outbox_sent
-                0x00001120        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001120                app_message_register_outbox_sent
+                0x00000f00        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f00                app_message_register_inbox_received
  .text.window_set_click_context
-                0x0000112c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000112c                window_set_click_context
+                0x00000f0c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f0c                window_set_click_context
  .text.window_single_click_subscribe
-                0x00001138        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001138                window_single_click_subscribe
+                0x00000f18        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f18                window_single_click_subscribe
  .text.graphics_draw_text
-                0x00001144        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001144                graphics_draw_text
+                0x00000f24        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f24                graphics_draw_text
  .text.graphics_context_set_fill_color
-                0x00001150        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001150                graphics_context_set_fill_color
+                0x00000f30        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f30                graphics_context_set_fill_color
  .text.graphics_context_set_stroke_color
-                0x0000115c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000115c                graphics_context_set_stroke_color
+                0x00000f3c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f3c                graphics_context_set_stroke_color
  .text.graphics_context_set_text_color
-                0x00001168        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001168                graphics_context_set_text_color
+                0x00000f48        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f48                graphics_context_set_text_color
  .text.window_set_background_color
-                0x00001174        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001174                window_set_background_color
+                0x00000f54        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f54                window_set_background_color
  .text.menu_layer_create
-                0x00001180        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001180                menu_layer_create
+                0x00000f60        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f60                menu_layer_create
  .text.action_bar_layer_add_to_window
-                0x0000118c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000118c                action_bar_layer_add_to_window
+                0x00000f6c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f6c                action_bar_layer_add_to_window
  .text.action_bar_layer_create
-                0x00001198        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001198                action_bar_layer_create
+                0x00000f78        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f78                action_bar_layer_create
  .text.action_bar_layer_destroy
-                0x000011a4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000011a4                action_bar_layer_destroy
+                0x00000f84        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f84                action_bar_layer_destroy
  .text.action_bar_layer_set_click_config_provider
-                0x000011b0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000011b0                action_bar_layer_set_click_config_provider
+                0x00000f90        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f90                action_bar_layer_set_click_config_provider
  .text.action_bar_layer_set_context
-                0x000011bc        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000011bc                action_bar_layer_set_context
+                0x00000f9c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000f9c                action_bar_layer_set_context
  .text.action_bar_layer_set_icon
-                0x000011c8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000011c8                action_bar_layer_set_icon
+                0x00000fa8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000fa8                action_bar_layer_set_icon
  .text.menu_cell_layer_is_highlighted
-                0x000011d4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000011d4                menu_cell_layer_is_highlighted
+                0x00000fb4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000fb4                menu_cell_layer_is_highlighted
  .text.text_layer_create
-                0x000011e0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000011e0                text_layer_create
+                0x00000fc0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000fc0                text_layer_create
  .text.text_layer_destroy
-                0x000011ec        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000011ec                text_layer_destroy
+                0x00000fcc        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000fcc                text_layer_destroy
  .text.text_layer_get_layer
-                0x000011f8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000011f8                text_layer_get_layer
+                0x00000fd8        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000fd8                text_layer_get_layer
  .text.text_layer_set_background_color
-                0x00001204        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001204                text_layer_set_background_color
+                0x00000fe4        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000fe4                text_layer_set_background_color
  .text.text_layer_set_font
-                0x00001210        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001210                text_layer_set_font
+                0x00000ff0        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000ff0                text_layer_set_font
  .text.text_layer_set_text
-                0x0000121c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000121c                text_layer_set_text
+                0x00000ffc        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000ffc                text_layer_set_text
  .text.text_layer_set_text_alignment
-                0x00001228        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001228                text_layer_set_text_alignment
+                0x00001008        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00001008                text_layer_set_text_alignment
  .text.text_layer_set_text_color
-                0x00001234        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001234                text_layer_set_text_color
- .text.menu_layer_set_highlight_colors
-                0x00001240        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001240                menu_layer_set_highlight_colors
- .text.menu_layer_set_normal_colors
-                0x0000124c        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000124c                menu_layer_set_normal_colors
+                0x00001014        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00001014                text_layer_set_text_color
  .text.menu_layer_set_callbacks
-                0x00001258        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00001258                menu_layer_set_callbacks
+                0x00001020        0xc /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00001020                menu_layer_set_callbacks
  .text.__udivmoddi4
-                0x00001264      0x2f4 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
-                0x00001264                __udivmoddi4
+                0x0000102c      0x2f4 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x0000102c                __udivmoddi4
  .text._strtoll_l.isra.0
-                0x00001558      0x17c /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-strtoll.o)
- .text.strtoll  0x000016d4       0x1c /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-strtoll.o)
-                0x000016d4                strtoll
- .text.strchr   0x000016f0       0xd0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-strchr.o)
-                0x000016f0                strchr
+                0x00001320      0x17c /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-strtoll.o)
+ .text.strtoll  0x0000149c       0x1c /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-strtoll.o)
+                0x0000149c                strtoll
+ .text.strchr   0x000014b8       0xd0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-strchr.o)
+                0x000014b8                strchr
  *(.rodata)
  *(.rodata*)
  .rodata.prv_draw_card.constprop.0.str1.1
-                0x000017c0      0x1b7 src/c/converter_window.c.57.o
+                0x00001588      0x106 src/c/converter_window.c.57.o
                                  0x37 (size before relaxing)
  .rodata.prv_format_number_x100.constprop.0.str1.1
-                0x00001977        0xf src/c/converter_window.c.57.o
+                0x0000168e        0xf src/c/converter_window.c.57.o
  .rodata.prv_update_layer.str1.1
-                0x00001977       0x5d src/c/converter_window.c.57.o
+                0x0000168e       0x5d src/c/converter_window.c.57.o
  .rodata.prv_window_load.str1.1
-                0x00001977       0x16 src/c/converter_window.c.57.o
- .rodata.outbox_sent_handler.str1.1
-                0x00001977       0x1f src/c/myproject_pebble.c.57.o
- .rodata.outbox_failed_handler.str1.1
-                0x00001977       0x12 src/c/myproject_pebble.c.57.o
- .rodata.inbox_dropped_handler.str1.1
-                0x00001977       0x12 src/c/myproject_pebble.c.57.o
+                0x0000168e       0x16 src/c/converter_window.c.57.o
  .rodata.inbox_received_handler.str1.1
-                0x00001977       0x85 src/c/myproject_pebble.c.57.o
+                0x0000168e        0xd src/c/myproject_pebble.c.57.o
  .rodata.menu_draw_row_callback.str1.1
-                0x00001977       0x47 src/c/myproject_pebble.c.57.o
+                0x0000168e       0x47 src/c/myproject_pebble.c.57.o
  .rodata.window_load.str1.1
-                0x00001977       0x2d src/c/myproject_pebble.c.57.o
- .rodata.main.str1.1
-                0x00001977        0xc src/c/myproject_pebble.c.57.o
- *fill*         0x00001977        0x1 
+                0x0000168e       0x40 src/c/myproject_pebble.c.57.o
+ *fill*         0x0000168e        0x2 
  .rodata._ctype_
-                0x00001978      0x101 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-ctype_.o)
-                0x00001978                _ctype_
+                0x00001690      0x101 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-ctype_.o)
+                0x00001690                _ctype_
 
-.glue_7         0x00001a7c        0x0
- .glue_7        0x00001a7c        0x0 linker stubs
+.glue_7         0x00001794        0x0
+ .glue_7        0x00001794        0x0 linker stubs
 
-.glue_7t        0x00001a7c        0x0
- .glue_7t       0x00001a7c        0x0 linker stubs
+.glue_7t        0x00001794        0x0
+ .glue_7t       0x00001794        0x0 linker stubs
 
-.vfp11_veneer   0x00001a7c        0x0
- .vfp11_veneer  0x00001a7c        0x0 linker stubs
+.vfp11_veneer   0x00001794        0x0
+ .vfp11_veneer  0x00001794        0x0 linker stubs
 
-.v4_bx          0x00001a7c        0x0
- .v4_bx         0x00001a7c        0x0 linker stubs
+.v4_bx          0x00001794        0x0
+ .v4_bx         0x00001794        0x0 linker stubs
 
-.init           0x00001a7c        0x4
- .init          0x00001a7c        0x4 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crti.o
-                0x00001a7c                _init
+.init           0x00001794        0x4
+ .init          0x00001794        0x4 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crti.o
+                0x00001794                _init
 
-.fini           0x00001a80        0x4
- .fini          0x00001a80        0x4 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crti.o
-                0x00001a80                _fini
+.fini           0x00001798        0x4
+ .fini          0x00001798        0x4 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crti.o
+                0x00001798                _fini
 
-.iplt           0x00001a84        0x0
- .iplt          0x00001a84        0x0 src/c/converter_window.c.57.o
+.iplt           0x0000179c        0x0
+ .iplt          0x0000179c        0x0 src/c/converter_window.c.57.o
 
-.rel.dyn        0x00001a84        0x0
- .rel.iplt      0x00001a84        0x0 src/c/converter_window.c.57.o
+.rel.dyn        0x0000179c        0x0
+ .rel.iplt      0x0000179c        0x0 src/c/converter_window.c.57.o
 
 .ARM.exidx.text.__udivmoddi4
-                0x00001a84        0x8
+                0x0000179c        0x8
  .ARM.exidx.text.__udivmoddi4
-                0x00001a84        0x8 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x0000179c        0x8 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
 
-.data           0x00001a90      0x178
+.data           0x000017a8      0x178
  *(.data)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crti.o
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crtbegin.o
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
- .data          0x00001a90        0x0 src/c/converter_window.c.57.o
- .data          0x00001a90        0x0 src/c/myproject_pebble.c.57.o
- .data          0x00001a90        0x0 aplite/appinfo.auto.c.57.o
- .data          0x00001a90        0x0 aplite/src/resource_ids.auto.c.57.o
- .data          0x00001a90        0x0 src/message_keys.auto.c.57.o
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_ldivmod.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-atexit.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-exit.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-strtoll.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-ctype_.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-findfp.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-fwalk.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-stdio.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-strchr.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-closer.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-reent.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-impure.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-lseekr.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-readr.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-writer.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-init.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-fini.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-lock.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-__atexit.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-__call_atexit.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-freer.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-mallocr.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-mlock.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-fclose.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-fflush.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-sbrkr.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-sysconf.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-errno.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crtend.o
- .data          0x00001a90        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crtn.o
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crti.o
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crtbegin.o
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .data          0x000017a8        0x0 src/c/converter_window.c.57.o
+ .data          0x000017a8        0x0 src/c/myproject_pebble.c.57.o
+ .data          0x000017a8        0x0 aplite/appinfo.auto.c.57.o
+ .data          0x000017a8        0x0 aplite/src/resource_ids.auto.c.57.o
+ .data          0x000017a8        0x0 src/message_keys.auto.c.57.o
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_ldivmod.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-atexit.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-exit.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-strtoll.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-ctype_.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-findfp.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-fwalk.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-stdio.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-strchr.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-closer.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-reent.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-impure.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-lseekr.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-readr.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-writer.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-init.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-fini.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-lock.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-__atexit.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-__call_atexit.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-freer.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-mallocr.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-mlock.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-fclose.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-fflush.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-sbrkr.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-sysconf.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-errno.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crtend.o
+ .data          0x000017a8        0x0 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crtn.o
  *(.data.*)
  .data.s_row_count
-                0x00001a90        0x2 src/c/myproject_pebble.c.57.o
+                0x000017a8        0x2 src/c/myproject_pebble.c.57.o
  .data.s_header_text
-                0x00001a92       0x30 src/c/myproject_pebble.c.57.o
- *fill*         0x00001ac2        0x2 
+                0x000017aa       0x30 src/c/myproject_pebble.c.57.o
+ *fill*         0x000017da        0x2 
  .data._impure_ptr
-                0x00001ac4        0x4 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-impure.o)
-                0x00001ac4                _impure_ptr
+                0x000017dc        0x4 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-impure.o)
+                0x000017dc                _impure_ptr
  .data._impure_data
-                0x00001ac8      0x140 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-impure.o)
-                0x00001ac8                _impure_data
+                0x000017e0      0x140 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-impure.o)
+                0x000017e0                _impure_data
 
-.igot.plt       0x00001c08        0x0
- .igot.plt      0x00001c08        0x0 src/c/converter_window.c.57.o
+.igot.plt       0x00001920        0x0
+ .igot.plt      0x00001920        0x0 src/c/converter_window.c.57.o
 
-.bss            0x00001c08      0xdcc
+.bss            0x00001920      0xdcc
  *(.bss)
  *(.bss.*)
  .bss.s_converter_window
-                0x00001c08        0x4 src/c/myproject_pebble.c.57.o
- *fill*         0x00001c0c        0x4 
- .bss.s_items   0x00001c10      0xc80 src/c/myproject_pebble.c.57.o
+                0x00001920        0x4 src/c/myproject_pebble.c.57.o
+ *fill*         0x00001924        0x4 
+ .bss.s_items   0x00001928      0xc80 src/c/myproject_pebble.c.57.o
  .bss.s_menu_layer
-                0x00002890        0x4 src/c/myproject_pebble.c.57.o
+                0x000025a8        0x4 src/c/myproject_pebble.c.57.o
  .bss.s_header_layer
-                0x00002894        0x4 src/c/myproject_pebble.c.57.o
+                0x000025ac        0x4 src/c/myproject_pebble.c.57.o
  .bss.s_main_window
-                0x00002898        0x4 src/c/myproject_pebble.c.57.o
- .bss.__sf      0x0000289c      0x138 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-findfp.o)
-                0x0000289c                __sf
+                0x000025b0        0x4 src/c/myproject_pebble.c.57.o
+ .bss.__sf      0x000025b4      0x138 /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-findfp.o)
+                0x000025b4                __sf
 
 DISCARD
  libc.a(*)
@@ -1975,61 +1953,61 @@ LOAD /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc
  .comment       0x00000039       0x3a /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-errno.o)
  .comment       0x00000039       0x3a /home/drimo/.pebble-sdk/SDKs/4.9.148/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/crtend.o
 
-.debug_info     0x00000000     0x390c
+.debug_info     0x00000000     0x3563
  .debug_info    0x00000000     0x19ff src/c/converter_window.c.57.o
- .debug_info    0x000019ff     0x1a15 src/c/myproject_pebble.c.57.o
- .debug_info    0x00003414      0x33e aplite/appinfo.auto.c.57.o
- .debug_info    0x00003752       0xad aplite/src/resource_ids.auto.c.57.o
- .debug_info    0x000037ff      0x10d src/message_keys.auto.c.57.o
+ .debug_info    0x000019ff     0x166c src/c/myproject_pebble.c.57.o
+ .debug_info    0x0000306b      0x33e aplite/appinfo.auto.c.57.o
+ .debug_info    0x000033a9       0xad aplite/src/resource_ids.auto.c.57.o
+ .debug_info    0x00003456      0x10d src/message_keys.auto.c.57.o
 
-.debug_abbrev   0x00000000      0xa36
+.debug_abbrev   0x00000000      0xa19
  .debug_abbrev  0x00000000      0x4a3 src/c/converter_window.c.57.o
- .debug_abbrev  0x000004a3      0x446 src/c/myproject_pebble.c.57.o
- .debug_abbrev  0x000008e9       0xb9 aplite/appinfo.auto.c.57.o
- .debug_abbrev  0x000009a2       0x4a aplite/src/resource_ids.auto.c.57.o
- .debug_abbrev  0x000009ec       0x4a src/message_keys.auto.c.57.o
+ .debug_abbrev  0x000004a3      0x429 src/c/myproject_pebble.c.57.o
+ .debug_abbrev  0x000008cc       0xb9 aplite/appinfo.auto.c.57.o
+ .debug_abbrev  0x00000985       0x4a aplite/src/resource_ids.auto.c.57.o
+ .debug_abbrev  0x000009cf       0x4a src/message_keys.auto.c.57.o
 
 .debug_loclists
-                0x00000000      0xe76
+                0x00000000      0xd3f
  .debug_loclists
                 0x00000000      0x986 src/c/converter_window.c.57.o
  .debug_loclists
-                0x00000986      0x4f0 src/c/myproject_pebble.c.57.o
+                0x00000986      0x3b9 src/c/myproject_pebble.c.57.o
 
-.debug_aranges  0x00000000      0x170
+.debug_aranges  0x00000000      0x150
  .debug_aranges
                 0x00000000       0xb8 src/c/converter_window.c.57.o
  .debug_aranges
-                0x000000b8       0x70 src/c/myproject_pebble.c.57.o
+                0x000000b8       0x50 src/c/myproject_pebble.c.57.o
  .debug_aranges
-                0x00000128       0x18 aplite/appinfo.auto.c.57.o
+                0x00000108       0x18 aplite/appinfo.auto.c.57.o
  .debug_aranges
-                0x00000140       0x18 aplite/src/resource_ids.auto.c.57.o
+                0x00000120       0x18 aplite/src/resource_ids.auto.c.57.o
  .debug_aranges
-                0x00000158       0x18 src/message_keys.auto.c.57.o
+                0x00000138       0x18 src/message_keys.auto.c.57.o
 
 .debug_rnglists
-                0x00000000      0x13e
+                0x00000000      0x103
  .debug_rnglists
                 0x00000000       0xb1 src/c/converter_window.c.57.o
  .debug_rnglists
-                0x000000b1       0x8d src/c/myproject_pebble.c.57.o
+                0x000000b1       0x52 src/c/myproject_pebble.c.57.o
 
-.debug_line     0x00000000     0x14dd
+.debug_line     0x00000000     0x135d
  .debug_line    0x00000000      0x9d9 src/c/converter_window.c.57.o
- .debug_line    0x000009d9      0x77b src/c/myproject_pebble.c.57.o
- .debug_line    0x00001154      0x16c aplite/appinfo.auto.c.57.o
- .debug_line    0x000012c0      0x112 aplite/src/resource_ids.auto.c.57.o
- .debug_line    0x000013d2      0x10b src/message_keys.auto.c.57.o
+ .debug_line    0x000009d9      0x5fb src/c/myproject_pebble.c.57.o
+ .debug_line    0x00000fd4      0x16c aplite/appinfo.auto.c.57.o
+ .debug_line    0x00001140      0x112 aplite/src/resource_ids.auto.c.57.o
+ .debug_line    0x00001252      0x10b src/message_keys.auto.c.57.o
 
-.debug_str      0x00000000     0x1a76
- .debug_str     0x00000000     0x1a76 src/c/converter_window.c.57.o
+.debug_str      0x00000000     0x1914
+ .debug_str     0x00000000     0x1914 src/c/converter_window.c.57.o
                                 0xcee (size before relaxing)
- .debug_str     0x00001a76     0x105e src/c/myproject_pebble.c.57.o
- .debug_str     0x00001a76      0x4f1 aplite/appinfo.auto.c.57.o
- .debug_str     0x00001a76      0x1fc aplite/src/resource_ids.auto.c.57.o
- .debug_str     0x00001a76      0x291 src/message_keys.auto.c.57.o
+ .debug_str     0x00001914      0xedb src/c/myproject_pebble.c.57.o
+ .debug_str     0x00001914      0x4f1 aplite/appinfo.auto.c.57.o
+ .debug_str     0x00001914      0x1fc aplite/src/resource_ids.auto.c.57.o
+ .debug_str     0x00001914      0x291 src/message_keys.auto.c.57.o
 
-.debug_frame    0x00000000      0x3bc
+.debug_frame    0x00000000      0x360
  .debug_frame   0x00000000      0x258 src/c/converter_window.c.57.o
- .debug_frame   0x00000258      0x164 src/c/myproject_pebble.c.57.o
+ .debug_frame   0x00000258      0x108 src/c/myproject_pebble.c.57.o
